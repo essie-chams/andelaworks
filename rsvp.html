@@ -1,6 +1,6 @@
 <html>
 <head><title>booking rsvp</title>
-<link rel="stylesheet" type="text/css" href="bs/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="mycss.css">
 <style type="text/css">
 	button
 	{
@@ -8,28 +8,61 @@
 		font-size: 20px;
 
 	}
+	h1
+	{
+		text-shadow: 2px 2px #6495ED;
+	}
+	.my{
+		padding: 20px;
+		margin: 30px;
+		box-shadow:  5px 10px 5px grey;
+		background-color: seashell;
+		font-size: 32px;
+		font-family: sans-serif;
+		text-align: justify;
+		font-weight: 4px;
+		text-shadow: 4px 2px 2px #6495ED;
+		}
+		
 </style>
+<script type="text/javascript">
+	funtion ensure()
+	{
+		if (document.vip.em.value == "") && (document.vip.enam.value == "")
+		{
+			alert("please fill out these fields");
+		}
+		else
+			confirm ("are you sure you want to rsvp this event???");
+	}
+</script>
 </head>
-<body bgcolor="brown">
+<body bgcolor="FFE4E1">
+	<nav id="nav">
+		<ul>
+			<li><a href="events.html">event</a></li>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+		
+	</nav>
 	
-	<center><h1><strong>event RSVP</strong></h1></center>
+	<center><h1><strong>RSVP Event</strong></h1></center>
 	<center>
-<a href="index.html">home</a>
-<a href="events.html">events</a></center>
-		<form>
+		<div class="my">
+		<form name="vip">
 		<center>
 		<table>
-		<tr><td>Email </td><td><input type="email"></td></tr><p>
-		<tr><td>eventname </td><td><input type="text"></td></tr><p>
+		<tr><td>Email </td><td><input type="email" name="em"></td></tr><p>
+		<tr><td>eventname </td><td><input type="text" name="enam"></td></tr><p>
 			<tr>
-			<td><button>get started</button></td>
+			<td><button onclick="ensure()">get started</button></td>
 		</tr>
 		</table>
 		</center>
 
 
 	</form>
-
+</div>
 </body>
 
 </html>
