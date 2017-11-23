@@ -1,29 +1,53 @@
 <html>
 <head><title>logging in</title>
-<link rel="stylesheet" type="text/css" href="bs/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<style type="text/css">
+	.my{
+		padding: 20px;
+		margin: 30px;
+		box-shadow:  5px 10px 5px grey;
+		background-color: seashell;
+		font-size: 32px;
+		font-family: sans-serif;
+		text-align: justify;
+		font-weight: 4px;
+		text-shadow: 4px 2px 2px #6495ED;
+		}
+		
+</style>
+
 </head>
-<body bgcolor="#FFEBCD">
+<body bgcolor="silver">
 	
+	<nav id="nav">
+		<ul>
+			<li><a href="create.html">register</a></li>
+			<li><a href="events.html">events</a></li>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+		
+	</nav>
 	<center><h1><strong>Log In</strong></h1></center>
-	<center>
-<a href="create.html">register</a>
-<a href="index.html">home</a>
-<a href="events.html">events</a></center>
+	
+	<div class="my">
+		<form>
+	
 	<center><p><h2>Please put in the credentials to log in</h2></h2></p></center>
-	<form>
 		<center>
 		<table>
-		<tr><td>Username </td><td><input type="text" name="uname"></td></tr><p>
-		<tr><td>Password </td><td><input type="Password" name="pword"></td></tr><p>
+			<tr><td>Username </td><td><input type="text" name="uname"></td></tr><p>
+			<tr><td>Password </td><td><input type="Password" name="pword"></td></tr><p>
 			<tr>
 			<td><button>login</button></td>
 			<td><button>Refresh</button></td>
-		</tr>
+			</tr>
 		</table>
 		</center>
 
 
 	</form>
+	</div>
+	
 
 </body>
 
