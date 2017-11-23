@@ -1,18 +1,46 @@
 <html>
 <head><title> creating an account</title>
-<link rel="stylesheet" type="text/css" href="bs/css/bootstrap.min.css">
-</head>
-<body bgcolor="gray">
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<style type="text/css">
 	
+	.reg{
+		padding: 20px;
+		margin: 30px;
+		box-shadow:  5px 10px 5px grey;
+		background-color: silver;
+		font-size: 36px;
+		font-family: sans-serif;
+		text-align: center;
+		align-content: center;
+		font-weight: 8px;	
+		text-shadow: 4px 2px 2px #6495ED;
+	}
+	input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+</style>
+</head>
+<body bgcolor="lavender">
+	
+	<nav id="nav">
+		<ul>
+			<li><a href="events.html">Event</a></li>
+			<li><a href="login.html">login</a></li>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+		
+	</nav>
 	<center><h1><strong>Register</strong></h1>
 	
-<a href="index.html">Home</a>
-<a href="login.html">login</a>
-<a href="events.html">events</a></center>
-	
-	<center><p><h2>Please complete the form below to create a user account</h2></h2></p>
-	<form id="1">
-		<table>
+		<div class="reg">
+			<p><h3>Please complete the form below to create a user account</h3></p>
+			<center>
+			<form id="1">
+				<table>
 		<tr><td>First Name</td> <td><input type="text" name="fname"></td></tr><p>
 		<tr><td>Last Name </td><td><input type="text" name="lname"></td></tr><p>
 		<tr><td>Email	</td><td><input type="email" name="mail"></td></tr><p>
@@ -24,10 +52,9 @@
 			<td><button>Cancel</button></td>
 		</tr>
 		</table>
-		
-
-
-	</form>
+	</form></center>
+</div>
+	
 </center>
 </body>
 
